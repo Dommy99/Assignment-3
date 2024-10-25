@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+  </head>
+  <body>
+    <!--Text box max of 20 characters -->
+    <label for="user">User Name:</label>
+    <input type="text" id="user" name="user" maxlength="20" /><br /><br />
+
+    <!-- Favorite month of the year -->
+    <fieldset>
+      <legend>Vote for Your Favorite Month</legend>
+      <input type="radio" id="january" name="favMonth" value="January" />
+      <label for="january">January</label><br />
+
+      <input type="radio" id="february" name="favMonth" value="February" />
+      <label for="february">February</label><br />
+
+      <input type="radio" id="march" name="favMonth" value="March" />
+      <label for="march">March</label><br />
+    </fieldset>
+    <br />
+
+    <!-- List of favorite social networking site -->
+    <label for="social">Favorite Social Networking Site:</label>
+    <select id="social" name="social">
+      <option value="facebook">Facebook</option>
+      <option value="twitter">Twitter</option>
+      <option value="instagram">Instagram</option>
+      <option value="linkedin">LinkedIn</option></select
+    ><br /><br />
+
+    <!-- Field set and legend for Shipping Address -->
+    <fieldset>
+      <legend>Shipping Address</legend>
+      <label for="address1">Address Line 1:</label>
+      <input type="text" id="address1" name="AddressLine1" /><br /><br />
+
+      <label for="address2">Address Line 2:</label>
+      <input type="text" id="address2" name="AddressLine2" /><br /><br />
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="City" /><br /><br />
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="State" /><br /><br />
+
+      <label for="zip">ZIP:</label>
+      <input type="text" id="zip" name="ZIP" /><br /><br />
+    </fieldset>
+    <br />
+
+    <!-- Image button -->
+    <form action="submit_form.php" method="post">
+      <input
+        type="image"
+        src="signup.gif"
+        alt="Sign Up"
+        width="100"
+        height="50"
+      />
+    </form>
+    <br />
+
+    <!-- Hidden input control -->
+    <input type="hidden" name="userid" value="12345" />
+
+    <!-- Password box form control -->
+    <label for="pword">Password:</label>
+    <input type="password" id="pword" name="pword" /><br /><br />
+  </body>
 </html>
